@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(php -v)",
+      "Bash(php artisan *)",
+      "Bash(npm run *)",
+      "Bash(kill %1)",
+      "Bash(ls -la bootstrap/cache/)",
+      "Bash(npx tsc *)",
+      "Bash(echo \"EXIT: $?\")",
+      "Bash(rm -f /tmp/cookies.txt)",
+      "Bash(curl -s -c /tmp/cookies.txt -H \"Referer: http://127.0.0.1:8000/\" http://127.0.0.1:8000/sanctum/csrf-cookie -o /dev/null)",
+      "Bash(curl -s -b /tmp/cookies.txt -H \"Referer: http://127.0.0.1:8000/\" http://127.0.0.1:8000/api/v1/quotations -H \"Accept: application/json\" -o /tmp/quotations.json)",
+      "Bash(php -r '$d = json_decode\\(file_get_contents\\('\\\\''/tmp/quotations.json'\\\\''\\)\\); echo count\\($d\\) . '\\\\'' cotizaciones, primera id='\\\\'' . $d[0]->id . PHP_EOL;')"
+    ]
+  }
+}
